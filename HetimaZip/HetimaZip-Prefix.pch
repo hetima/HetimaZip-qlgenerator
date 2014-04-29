@@ -1,0 +1,17 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
+
+#ifdef DEBUG
+#define LOG(...) NSLog(__VA_ARGS__)
+#else
+#define LOG(...)
+#endif
+
+#endif

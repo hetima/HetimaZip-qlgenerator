@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1152B5190B9926005EAE6F /* ipa_tmpl.html in Resources */ = {isa = PBXBuildFile; fileRef = AA1152B4190B9926005EAE6F /* ipa_tmpl.html */; };
+		AA310E3B190A226F00460648 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E3A190A226F00460648 /* QuickLook.framework */; };
+		AA310E3D190A226F00460648 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E3C190A226F00460648 /* ApplicationServices.framework */; };
+		AA310E3F190A226F00460648 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E3E190A226F00460648 /* CoreServices.framework */; };
+		AA310E41190A226F00460648 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E40190A226F00460648 /* CoreFoundation.framework */; };
+		AA310E47190A226F00460648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA310E45190A226F00460648 /* InfoPlist.strings */; };
+		AA310E49190A226F00460648 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AA310E48190A226F00460648 /* GenerateThumbnailForURL.m */; };
+		AA310E4B190A226F00460648 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AA310E4A190A226F00460648 /* GeneratePreviewForURL.m */; };
+		AA310E4D190A226F00460648 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AA310E4C190A226F00460648 /* main.c */; };
+		AA310E5F190A233500460648 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = AA310E55190A233500460648 /* crypt.h */; };
+		AA310E60190A233500460648 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = AA310E56190A233500460648 /* ioapi.c */; };
+		AA310E61190A233500460648 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = AA310E57190A233500460648 /* ioapi.h */; };
+		AA310E65190A233500460648 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = AA310E5B190A233500460648 /* unzip.c */; };
+		AA310E66190A233500460648 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = AA310E5C190A233500460648 /* unzip.h */; };
+		AA310E6A190A236600460648 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E69190A236600460648 /* libz.dylib */; };
+		AA310E75190A69D800460648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E74190A69D800460648 /* Foundation.framework */; };
+		AA310E77190A69DD00460648 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA310E76190A69DD00460648 /* AppKit.framework */; };
+		AA8FE1E6190C8F0E00E42302 /* HZQZipItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8FE1E4190C8F0E00E42302 /* HZQZipItem.h */; };
+		AA8FE1E7190C8F0E00E42302 /* HZQZipItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE1E5190C8F0E00E42302 /* HZQZipItem.m */; };
+		AA8FE1EA190C9DBE00E42302 /* HZQIpaPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8FE1E8190C9DBE00E42302 /* HZQIpaPreview.h */; };
+		AA8FE1EB190C9DBE00E42302 /* HZQIpaPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE1E9190C9DBE00E42302 /* HZQIpaPreview.m */; };
+		AA8FE1EE190CB9BC00E42302 /* HZQZipPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8FE1EC190CB9BB00E42302 /* HZQZipPreview.h */; };
+		AA8FE1EF190CB9BC00E42302 /* HZQZipPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE1ED190CB9BC00E42302 /* HZQZipPreview.m */; };
+		AA8FE1F1190CEAE400E42302 /* zip_tmpl.html in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE1F0190CEAE400E42302 /* zip_tmpl.html */; };
+		AA8FE1F4190E82B000E42302 /* HZQFolderPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8FE1F2190E82B000E42302 /* HZQFolderPreview.h */; };
+		AA8FE1F5190E82B000E42302 /* HZQFolderPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE1F3190E82B000E42302 /* HZQFolderPreview.m */; };
+		AA8FE1F8190FA28700E42302 /* HZQImageAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8FE1F6190FA28700E42302 /* HZQImageAgent.h */; };
+		AA8FE1F9190FA28700E42302 /* HZQImageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE1F7190FA28700E42302 /* HZQImageAgent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA1152B4190B9926005EAE6F /* ipa_tmpl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ipa_tmpl.html; sourceTree = "<group>"; };
+		AA310E37190A226F00460648 /* HetimaZip.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HetimaZip.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA310E3A190A226F00460648 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		AA310E3C190A226F00460648 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		AA310E3E190A226F00460648 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		AA310E40190A226F00460648 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AA310E44190A226F00460648 /* HetimaZip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HetimaZip-Info.plist"; sourceTree = "<group>"; };
+		AA310E46190A226F00460648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA310E48190A226F00460648 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		AA310E4A190A226F00460648 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		AA310E4C190A226F00460648 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AA310E4E190A226F00460648 /* HetimaZip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HetimaZip-Prefix.pch"; sourceTree = "<group>"; };
+		AA310E55190A233500460648 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		AA310E56190A233500460648 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		AA310E57190A233500460648 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		AA310E5B190A233500460648 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		AA310E5C190A233500460648 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		AA310E69190A236600460648 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AA310E74190A69D800460648 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA310E76190A69DD00460648 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA8FE1E4190C8F0E00E42302 /* HZQZipItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQZipItem.h; sourceTree = "<group>"; };
+		AA8FE1E5190C8F0E00E42302 /* HZQZipItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQZipItem.m; sourceTree = "<group>"; };
+		AA8FE1E8190C9DBE00E42302 /* HZQIpaPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQIpaPreview.h; sourceTree = "<group>"; };
+		AA8FE1E9190C9DBE00E42302 /* HZQIpaPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQIpaPreview.m; sourceTree = "<group>"; };
+		AA8FE1EC190CB9BB00E42302 /* HZQZipPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQZipPreview.h; sourceTree = "<group>"; };
+		AA8FE1ED190CB9BC00E42302 /* HZQZipPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQZipPreview.m; sourceTree = "<group>"; };
+		AA8FE1F0190CEAE400E42302 /* zip_tmpl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zip_tmpl.html; sourceTree = "<group>"; };
+		AA8FE1F2190E82B000E42302 /* HZQFolderPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQFolderPreview.h; sourceTree = "<group>"; };
+		AA8FE1F3190E82B000E42302 /* HZQFolderPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQFolderPreview.m; sourceTree = "<group>"; };
+		AA8FE1F6190FA28700E42302 /* HZQImageAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQImageAgent.h; sourceTree = "<group>"; };
+		AA8FE1F7190FA28700E42302 /* HZQImageAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQImageAgent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA310E32190A226F00460648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA310E77190A69DD00460648 /* AppKit.framework in Frameworks */,
+				AA310E75190A69D800460648 /* Foundation.framework in Frameworks */,
+				AA310E6A190A236600460648 /* libz.dylib in Frameworks */,
+				AA310E41190A226F00460648 /* CoreFoundation.framework in Frameworks */,
+				AA310E3B190A226F00460648 /* QuickLook.framework in Frameworks */,
+				AA310E3F190A226F00460648 /* CoreServices.framework in Frameworks */,
+				AA310E3D190A226F00460648 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA1152B1190B9915005EAE6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA1152B4190B9926005EAE6F /* ipa_tmpl.html */,
+				AA8FE1F0190CEAE400E42302 /* zip_tmpl.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA310E2C190A226F00460648 = {
+			isa = PBXGroup;
+			children = (
+				AA310E42190A226F00460648 /* HetimaZip */,
+				AA310E39190A226F00460648 /* Frameworks */,
+				AA310E38190A226F00460648 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA310E38190A226F00460648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA310E37190A226F00460648 /* HetimaZip.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA310E39190A226F00460648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA310E76190A69DD00460648 /* AppKit.framework */,
+				AA310E74190A69D800460648 /* Foundation.framework */,
+				AA310E69190A236600460648 /* libz.dylib */,
+				AA310E3A190A226F00460648 /* QuickLook.framework */,
+				AA310E3C190A226F00460648 /* ApplicationServices.framework */,
+				AA310E3E190A226F00460648 /* CoreServices.framework */,
+				AA310E40190A226F00460648 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA310E42190A226F00460648 /* HetimaZip */ = {
+			isa = PBXGroup;
+			children = (
+				AA310E48190A226F00460648 /* GenerateThumbnailForURL.m */,
+				AA310E4A190A226F00460648 /* GeneratePreviewForURL.m */,
+				AA8FE1E4190C8F0E00E42302 /* HZQZipItem.h */,
+				AA8FE1E5190C8F0E00E42302 /* HZQZipItem.m */,
+				AA8FE1E8190C9DBE00E42302 /* HZQIpaPreview.h */,
+				AA8FE1E9190C9DBE00E42302 /* HZQIpaPreview.m */,
+				AA8FE1EC190CB9BB00E42302 /* HZQZipPreview.h */,
+				AA8FE1ED190CB9BC00E42302 /* HZQZipPreview.m */,
+				AA8FE1F2190E82B000E42302 /* HZQFolderPreview.h */,
+				AA8FE1F3190E82B000E42302 /* HZQFolderPreview.m */,
+				AA8FE1F6190FA28700E42302 /* HZQImageAgent.h */,
+				AA8FE1F7190FA28700E42302 /* HZQImageAgent.m */,
+				AA310E4C190A226F00460648 /* main.c */,
+				AA310E54190A233500460648 /* minizip */,
+				AA1152B1190B9915005EAE6F /* Resources */,
+				AA310E43190A226F00460648 /* Supporting Files */,
+			);
+			path = HetimaZip;
+			sourceTree = "<group>";
+		};
+		AA310E43190A226F00460648 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA310E44190A226F00460648 /* HetimaZip-Info.plist */,
+				AA310E45190A226F00460648 /* InfoPlist.strings */,
+				AA310E4E190A226F00460648 /* HetimaZip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA310E54190A233500460648 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				AA310E55190A233500460648 /* crypt.h */,
+				AA310E56190A233500460648 /* ioapi.c */,
+				AA310E57190A233500460648 /* ioapi.h */,
+				AA310E5B190A233500460648 /* unzip.c */,
+				AA310E5C190A233500460648 /* unzip.h */,
+			);
+			path = minizip;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA310E33190A226F00460648 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8FE1F4190E82B000E42302 /* HZQFolderPreview.h in Headers */,
+				AA310E5F190A233500460648 /* crypt.h in Headers */,
+				AA8FE1F8190FA28700E42302 /* HZQImageAgent.h in Headers */,
+				AA8FE1EA190C9DBE00E42302 /* HZQIpaPreview.h in Headers */,
+				AA310E61190A233500460648 /* ioapi.h in Headers */,
+				AA310E66190A233500460648 /* unzip.h in Headers */,
+				AA8FE1E6190C8F0E00E42302 /* HZQZipItem.h in Headers */,
+				AA8FE1EE190CB9BC00E42302 /* HZQZipPreview.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA310E36190A226F00460648 /* HetimaZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA310E51190A226F00460648 /* Build configuration list for PBXNativeTarget "HetimaZip" */;
+			buildPhases = (
+				AA310E31190A226F00460648 /* Sources */,
+				AA310E32190A226F00460648 /* Frameworks */,
+				AA310E33190A226F00460648 /* Headers */,
+				AA310E34190A226F00460648 /* Resources */,
+				AA310E35190A226F00460648 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HetimaZip;
+			productName = HetimaZip;
+			productReference = AA310E37190A226F00460648 /* HetimaZip.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA310E2D190A226F00460648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hetima;
+			};
+			buildConfigurationList = AA310E30190A226F00460648 /* Build configuration list for PBXProject "HetimaZip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA310E2C190A226F00460648;
+			productRefGroup = AA310E38190A226F00460648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA310E36190A226F00460648 /* HetimaZip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA310E34190A226F00460648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8FE1F1190CEAE400E42302 /* zip_tmpl.html in Resources */,
+				AA1152B5190B9926005EAE6F /* ipa_tmpl.html in Resources */,
+				AA310E47190A226F00460648 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		AA310E35190A226F00460648 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA310E31190A226F00460648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA310E49190A226F00460648 /* GenerateThumbnailForURL.m in Sources */,
+				AA8FE1F9190FA28700E42302 /* HZQImageAgent.m in Sources */,
+				AA8FE1EB190C9DBE00E42302 /* HZQIpaPreview.m in Sources */,
+				AA8FE1F5190E82B000E42302 /* HZQFolderPreview.m in Sources */,
+				AA8FE1EF190CB9BC00E42302 /* HZQZipPreview.m in Sources */,
+				AA310E4B190A226F00460648 /* GeneratePreviewForURL.m in Sources */,
+				AA310E65190A233500460648 /* unzip.c in Sources */,
+				AA310E60190A233500460648 /* ioapi.c in Sources */,
+				AA310E4D190A226F00460648 /* main.c in Sources */,
+				AA8FE1E7190C8F0E00E42302 /* HZQZipItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA310E45190A226F00460648 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA310E46190A226F00460648 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA310E4F190A226F00460648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA310E50190A226F00460648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA310E52190A226F00460648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HetimaZip/HetimaZip-Prefix.pch";
+				INFOPLIST_FILE = "HetimaZip/HetimaZip-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		AA310E53190A226F00460648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HetimaZip/HetimaZip-Prefix.pch";
+				INFOPLIST_FILE = "HetimaZip/HetimaZip-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA310E30190A226F00460648 /* Build configuration list for PBXProject "HetimaZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA310E4F190A226F00460648 /* Debug */,
+				AA310E50190A226F00460648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA310E51190A226F00460648 /* Build configuration list for PBXNativeTarget "HetimaZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA310E52190A226F00460648 /* Debug */,
+				AA310E53190A226F00460648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA310E2D190A226F00460648 /* Project object */;
+}
