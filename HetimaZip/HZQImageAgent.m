@@ -32,7 +32,7 @@
     CGFloat bannerHeight;
     //適当に大きさ調節
     if (bannerWidth<33) {
-        bannerHeight=bannerWidth*(CGFloat)0.42;
+        bannerHeight=bannerWidth*(CGFloat)0.4;
     }else if (bannerWidth<55) {
         bannerHeight=bannerWidth*(CGFloat)0.3;
     }else{
@@ -94,12 +94,13 @@
     
     
     //banner
-    NSImage* bannerImage=[self bannerImageWithLabel:label  width:maxSize.width];
-    cropRect=NSMakeRect(0, 0, bannerImage.size.width, bannerImage.size.height);
-    NSRect inRect=NSMakeRect(0, 0, maxSize.width, maxSize.height);
-    inRect.size.height=(maxSize.width/bannerImage.size.width)*bannerImage.size.height;
-    [bannerImage drawInRect:inRect fromRect:cropRect operation:NSCompositeSourceOver fraction:0.70];
-    
+    if (maxSize.width>(CGFloat)22) {
+        NSImage* bannerImage=[self bannerImageWithLabel:label  width:maxSize.width];
+        cropRect=NSMakeRect(0, 0, bannerImage.size.width, bannerImage.size.height);
+        NSRect inRect=NSMakeRect(0, 0, maxSize.width, maxSize.height);
+        inRect.size.height=(maxSize.width/bannerImage.size.width)*bannerImage.size.height;
+        [bannerImage drawInRect:inRect fromRect:cropRect operation:NSCompositeSourceOver fraction:0.70];
+    }
     
     [canvas unlockFocus];
     NSData* result=[canvas TIFFRepresentation];
