@@ -1,4 +1,4 @@
-#HetimaZip.qlgenerator
+# HetimaZip.qlgenerator
 
 Quick Look plugin for zip file.
 
@@ -8,7 +8,7 @@ Quick Look plugin for zip file.
 - application icon in zip archive.
 - kMDItemWhereFroms metadata. 
 
-##Installation
+## Installation
 
 Download from http://hetima.com/hetimazipql/
 
@@ -21,6 +21,6 @@ Restart or do command `qlmanage -r` on Terminal.
 http://hetima.com/  
 https://twitter.com/hetima
 
-##License
+## License
 
 zlib License. Copyright (c) 2014 hetima
