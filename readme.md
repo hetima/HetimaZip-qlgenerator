@@ -10,15 +10,12 @@ Quick Look plugin for zip file.
 
 ## Installation
 
-Download from http://hetima.com/hetimazipql/
-
 Place into `~/Library/QuickLook`  
 Restart or do command `qlmanage -r` on Terminal.
 
 
 ## Author
 
-http://hetima.com/  
 https://twitter.com/hetima
 
 ## License
